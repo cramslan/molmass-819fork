@@ -418,10 +418,10 @@ def main(url='http://localhost:9000/{}'):
 
         CGIHTTPRequestHandler.is_cgi = is_cgi
         print('Serving CGI script at', url)
-        webbrowser.open(url)
+        
         url = urlparse(url)
         HTTPServer(
-            (url.hostname, url.port), CGIHTTPRequestHandler
+            ("0.0.0.0", url.port), CGIHTTPRequestHandler
         ).serve_forever()
 
 
