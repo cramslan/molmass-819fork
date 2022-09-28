@@ -20,4 +20,4 @@ RUN apt-get install -y libblas-dev liblapack-dev libatlas-base-dev gfortran
 EXPOSE 9000
 
 # Run source code
-CMD ["../usr/bin/python3", "./molmass/model_ws.py"]
+CMD ["../usr/bin/python3", "./molmass/molmass_web.py"]
