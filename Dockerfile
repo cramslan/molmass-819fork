@@ -7,7 +7,7 @@ COPY . /app
 
 #Need python3.9 to run random forest using multicores...
 RUN apt-get update
-RUN apt-get install -y python3.9
+RUN apt-get install -y python3.7
 RUN apt-get install -y python3-pip
 
 # Need following to get scipy pip install to work:
