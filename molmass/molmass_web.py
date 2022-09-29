@@ -385,7 +385,7 @@ def groups():
     return '\n'.join(result)
 
 
-def main(url='http://localhost:9000/{}'):
+def main(url='http://0.0.0.0:9000/{}'):
     """Run web application in local web server."""
     import cgi
     import cgitb
