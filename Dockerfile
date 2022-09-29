@@ -5,7 +5,7 @@ FROM ubuntu:20.04
 WORKDIR /app
 COPY . /app
 
-RUN chmod -X ./molmass/molmass_web.py
+RUN chmod -x ./molmass/molmass_web.py
 
 #Need python3.9 to run random forest using multicores...
 RUN apt-get update
